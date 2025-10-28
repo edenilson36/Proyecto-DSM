@@ -11,7 +11,8 @@
 ## 📌 Enlaces del proyecto
 
 - 📋 **Trello:** [Ver tablero](https://trello.com/b/qsa0MQfI/documento)  
-- 🎨 **Mockups:** [Ver diseños](https://www.figma.com/design/QFtcRojyeB6hQFujssLapg/Untitled?node-id=0-1&p=f&t=18p0KvYfnBBdTIlS-0)  
+- 🎨 **Mockups:** [Ver diseños](https://www.figma.com/design/QFtcRojyeB6hQFujssLapg/Untitled?node-id=0-1&p=f&t=18p0KvYfnBBdTIlS-0)
+- 📱 **APK:** [Descargar aplicación](https://drive.google.com/file/d/1GtbBMF_ty6JBUQ0sT3D6zQWzrmFe_lXV/view?usp=sharing)  
 
 ---
 
