@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="miniku_background">#D8E7CA</color>
+    <color name="miniku_dark_blue">#334D66</color>
+    <color name="miniku_medium_blue">#6D87A1</color>
+    <color name="miniku_light_blue">#94ADC7</color>
+    <color name="miniku_white">#FFFFFF</color>
+    <color name="miniku_light_gray">#F0F2F5</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

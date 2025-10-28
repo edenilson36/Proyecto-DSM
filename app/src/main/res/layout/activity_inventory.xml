@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/miniku_background"
+    tools:context=".InventoryActivity">
+
+    <LinearLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:background="@color/miniku_background"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="145dp"
+            android:layout_height="89dp"
+            android:contentDescription="Miniku Logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/menu"
+
+            android:contentDescription="Menú de opciones" />
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar_layout"
+        android:background="@color/miniku_background"
+        app:tabIconTint="@color/miniku_dark_blue"
+        app:tabIndicator="@drawable/tab_indicator_background"
+        app:tabIndicatorColor="@null"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorGravity="center"
+        app:tabIndicatorHeight="40dp"
+        app:tabMode="fixed"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/miniku_dark_blue"
+        app:tabTextColor="@color/miniku_dark_blue" />
+
+    <EditText
+        android:id="@+id/etSearchProduct"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tab_layout"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_white_background"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="8dp"
+        android:hint="Buscar producto"
+        android:inputType="text"
+        android:paddingHorizontal="12dp"
+        android:textColor="@color/miniku_dark_blue"
+        android:textColorHint="@color/miniku_medium_blue"
+        android:textSize="16sp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSearchProduct"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipAll"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Todo"
+            android:checked="true"
+            app:chipBackgroundColor="@color/selector_chip"
+            app:chipCornerRadius="16dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipCategory"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría"
+            app:chipBackgroundColor="@color/selector_chip"
+            app:chipCornerRadius="16dp" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProductos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chipGroupFilters"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false"
+        tools:listitem="@layout/item_product_card"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_agregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:backgroundTint="@color/miniku_medium_blue"
+        app:tint="@color/miniku_white"
+        android:contentDescription="Agregar Producto" />
+
+</RelativeLayout>
