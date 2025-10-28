@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "640393878145",
+    "project_id": "minikuapp",
+    "storage_bucket": "minikuapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640393878145:android:6dbbeedec133d3126d4b80",
+        "android_client_info": {
+          "package_name": "com.udb.minikuventas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsPXckWvN4vNK507VzOM1KfuIuu7a07KE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
