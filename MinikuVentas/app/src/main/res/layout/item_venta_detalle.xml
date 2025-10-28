@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/miniku_light_gray"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Producto"
+            android:textSize="12sp"
+            android:textColor="@color/miniku_medium_blue"/>
+
+        <TextView
+            android:id="@+id/tvProductoNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Camiseta"
+            android:textColor="@color/miniku_dark_blue"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad"
+            android:textSize="12sp"
+            android:textColor="@color/miniku_medium_blue"/>
+
+        <TextView
+            android:id="@+id/tvProductoCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textColor="@color/miniku_dark_blue"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio Unitario"
+            android:textSize="12sp"
+            android:textColor="@color/miniku_medium_blue"/>
+
+        <TextView
+            android:id="@+id/tvProductoPrecio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$25"
+            android:textColor="@color/miniku_dark_blue"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textSize="12sp"
+            android:textColor="@color/miniku_medium_blue"/>
+
+        <TextView
+            android:id="@+id/tvProductoTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$1250"
+            android:textColor="@color/miniku_dark_blue"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textSize="12sp"
+            android:textColor="@color/miniku_medium_blue"/>
+
+        <TextView
+            android:id="@+id/tvProductoFecha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15/07/2024"
+            android:textColor="@color/miniku_dark_blue"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente"
+            android:textSize="12sp"
+            android:textColor="@color/miniku_medium_blue"/>
+
+        <TextView
+            android:id="@+id/tvProductoCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ana Pérez"
+            android:textColor="@color/miniku_dark_blue"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

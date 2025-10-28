@@ -1,0 +1,42 @@
+# Generated files
+*.apk
+*.ap_
+*.aab
+*.apks
+*.dex
+*.class
+*.zip
+*.jar
+*.war
+*.ear
+
+# Build directory (ignore any build folder anywhere)
+**/build/
+
+# Local configuration files (IDE)
+.gradle/
+*/.gradle/
+**/.idea/
+**/*.iml
+**/local.properties
+.DS_Store
+
+# Keystore files
+*.jks
+*.keystore
+
+# Log files
+*.log
+
+# Other generated files
+captures/
+output.json
+*/output.json
+*/*/*/output.json
+*/*/*/*/output.json
+*/*/*/*/*/output.json
+*/output-metadata.json
+
+# Explicitly ignore release apks if needed
+MinikuVentas/app/release/
+MinikuVentas/app/app-release.apk

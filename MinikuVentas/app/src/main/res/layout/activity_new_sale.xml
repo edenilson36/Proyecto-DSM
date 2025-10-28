@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/miniku_background"
+    tools:context=".NewSaleActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/miniku_background"
+        app:tabIconTint="@color/miniku_dark_blue"
+        app:tabIndicator="@drawable/tab_indicator_background"
+        app:tabIndicatorColor="@null"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorGravity="center"
+        app:tabIndicatorHeight="40dp"
+        app:tabMode="fixed"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/miniku_dark_blue"
+        app:tabTextColor="@color/miniku_dark_blue" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nueva Venta"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/miniku_dark_blue"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Producto"
+                android:textColor="@color/miniku_dark_blue"/>
+            <EditText
+                android:id="@+id/txtNombreProducto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Ej: Camisa"
+                android:background="@color/miniku_white"
+                android:padding="8dp"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad"
+                android:textColor="@color/miniku_dark_blue"
+                android:layout_marginTop="8dp"/>
+            <EditText
+                android:id="@+id/txtCantidad"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Ej: 2"
+                android:inputType="number"
+                android:background="@color/miniku_white"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio"
+                android:textColor="@color/miniku_dark_blue"
+                android:layout_marginTop="8dp"/>
+            <EditText
+                android:id="@+id/txtPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Ej: 25.00"
+                android:inputType="numberDecimal"
+                android:background="@color/miniku_white"
+                android:padding="8dp"/>
+
+            <Button
+                android:id="@+id/btnAgregarProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agregar Producto"
+                android:backgroundTint="@color/miniku_medium_blue"
+                android:textColor="@color/miniku_white"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resumen de Venta"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/miniku_dark_blue"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/tvResumenVenta"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/miniku_light_gray"
+                android:padding="8dp"
+                android:text=""
+                tools:text="Camisa - Cantidad: 2 - $50.00"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cliente"
+                android:textColor="@color/miniku_dark_blue"
+                android:layout_marginTop="8dp"/>
+            <EditText
+                android:id="@+id/txtCliente"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Ej: Ana Pérez"
+                android:background="@color/miniku_white"
+                android:padding="8dp"
+                android:inputType="textPersonName|textCapWords" />
+
+            <Button
+                android:id="@+id/btnGenerarFactura"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Generar Factura"
+                android:backgroundTint="@color/miniku_dark_blue"
+                android:textColor="@color/miniku_white"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
